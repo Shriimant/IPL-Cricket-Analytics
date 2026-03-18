@@ -8,6 +8,8 @@
 - Interactive Power BI Dashboard.
 - MLflow Experiment Tracking.
 
+---
+
 ## 📌 Project Overview
 
 This project focuses on analyzing IPL cricket data and predicting match outcomes using Machine Learning. The solution is built using Databricks for data processing and Power BI for visualization.
@@ -44,6 +46,27 @@ Predict which team will win a cricket match based on historical match data, team
 
 ---
 
+## 🔍 Data Understanding & Feature Engineering
+
+- Dataset includes match-level and ball-by-ball data
+- Key features used:
+  - Venue (home advantage impact)
+  - Toss decision (bat/field influence)
+  - Teams (historical performance)
+- Data cleaning handled missing and inconsistent values
+- Created structured dataset for ML model
+
+---
+
+## 🗄️ Delta Lake Implementation
+
+- Used Delta tables across Bronze, Silver, and Gold layers
+- Ensured schema consistency and reliable data processing
+- Supports ACID transactions
+- Improves data reliability and performance
+
+---
+
 ## 🔄 Data Pipeline
 
 * Bronze Layer → Raw Data Ingestion
@@ -53,13 +76,32 @@ Predict which team will win a cricket match based on historical match data, team
 
 ---
 
-## 🤖 Model Performance
+## 🤖 Model Selection & Technical Reasoning
 
-- Model Used: Random Forest Classifier.
-- Accuracy: ~56%
-- Evaluation Metric: Accuracy Score.
+- Problem Type: Classification
+- Model Used: Random Forest Classifier
+- Reason:
+  - Handles non-linear relationships
+  - Works well with structured data
+  - Robust against overfitting
 
-Note: Model can be further improved using advanced feature engineering and tuning.
+---
+
+
+## 📊 Model Evaluation
+
+- Train-Test Split: 80-20
+- Metric Used: Accuracy
+- Model Accuracy: ~56%
+- Insight: Model performance can improve with better features and tuning
+
+---
+
+## 🔗 Pipeline Integration
+
+- Data processed through Bronze → Silver → Gold layers
+- Gold layer used for model training
+- Predictions generated and visualized in Power BI dashboard
 
 ---
 
@@ -73,6 +115,15 @@ Dashboard provides:
 * Match outcome prediction
 
 ---
+
+## 📊 Dashboard Preview
+
+![Page 1](images/page1.png)
+![Page 2](images/page2.png)
+![Page 3](images/page3.png)
+
+---
+
 
 ## 📁 Project Structure
 
