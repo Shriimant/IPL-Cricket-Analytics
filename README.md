@@ -1,5 +1,12 @@
 # 🏏 IPL Cricket Analytics & Match Prediction
 
+## 🔥 Key Highlights
+
+- End-to-End Data Pipeline using Databricks (Bronze → Silver → Gold)
+- Machine Learning Model for Match Prediction
+- Interactive Power BI Dashboard
+- MLflow Experiment Tracking
+
 ## 📌 Project Overview
 
 This project focuses on analyzing IPL cricket data and predicting match outcomes using Machine Learning. The solution is built using Databricks for data processing and Power BI for visualization.
