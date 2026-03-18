@@ -16,7 +16,7 @@ This project focuses on analyzing IPL cricket data and predicting match outcomes
 
 ## 🎯 Problem Statement
 
-Predict which team will win a cricket match based on historical match data, team performance, and match conditions.
+Predict which team will win a cricket match based on historical match data, team performance and match conditions.
 
 ---
 
