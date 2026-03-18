@@ -60,10 +60,21 @@ Predict which team will win a cricket match based on historical match data, team
 
 ## 🗄️ Delta Lake Implementation
 
-- Used Delta tables across Bronze, Silver, and Gold layers
-- Ensured schema consistency and reliable data processing
-- Supports ACID transactions
-- Improves data reliability and performance
+- Implemented Delta tables using Databricks Unity Catalog
+- Converted Silver layer data into Delta format using PySpark
+- Ensures reliable storage with ACID properties
+- Enables scalable and efficient data processing
+
+Example:
+
+df.write.format("delta").mode("overwrite").saveAsTable("silver_matches_delta")
+
+---
+
+## ⚡ Delta Optimization
+
+- Delta format improves query performance
+- Supports scalable data pipelines in Databricks
 
 ---
 
@@ -73,6 +84,7 @@ Predict which team will win a cricket match based on historical match data, team
 * Silver Layer → Data Cleaning
 * Gold Layer → Feature Engineering
 * ML Model → Random Forest Classifier
+* Silver layer data stored as Delta table for downstream ML and analytics.
 
 ---
 
