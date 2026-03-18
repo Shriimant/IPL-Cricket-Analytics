@@ -30,6 +30,22 @@ Predict which team will win a cricket match based on historical match data, team
 
 ---
 
+## 🔍 Key Insights
+
+- 🏏 Teams batting first tend to have a slightly higher win probability, indicating the importance of setting a strong target.
+
+- 🏟️ Home advantage plays a role, teams perform better at familiar venues like Wankhede (MI) and Chepauk (CSK).
+
+- 🎯 Toss decision impacts outcome, teams choosing to field first have shown higher success rates in certain conditions.
+
+- 🔥 Top teams like Mumbai Indians and Chennai Super Kings consistently outperform others across seasons.
+
+- 📊 Venue conditions significantly influence match results, making venue a critical feature in prediction.
+
+- 🤖 Machine Learning model (Random Forest) captures complex relationships between teams, venue and match conditions to predict outcomes effectively.
+
+---
+
 ## 🏗️ Architecture
 
 ![Pipeline DAG](https://github.com/Shriimant/IPL-Cricket-Analytics/blob/main/images/IPL_Architecture_Diagram.png)
@@ -48,22 +64,22 @@ Predict which team will win a cricket match based on historical match data, team
 
 ## 🔍 Data Understanding & Feature Engineering
 
-- Dataset includes match-level and ball-by-ball data
+- Dataset includes match level and ball by ball data.
 - Key features used:
   - Venue (home advantage impact)
   - Toss decision (bat/field influence)
   - Teams (historical performance)
-- Data cleaning handled missing and inconsistent values
-- Created structured dataset for ML model
+- Data cleaning handled missing and inconsistent values.
+- Created structured dataset for ML model.
 
 ---
 
 ## 🗄️ Delta Lake Implementation
 
-- Implemented Delta tables using Databricks Unity Catalog
-- Converted Silver layer data into Delta format using PySpark
-- Ensures reliable storage with ACID properties
-- Enables scalable and efficient data processing
+- Implemented Delta tables using Databricks Unity Catalog.
+- Converted Silver layer data into Delta format using PySpark.
+- Ensures reliable storage with ACID properties.
+- Enables scalable and efficient data processing.
 
 Example:
 
@@ -73,8 +89,8 @@ df.write.format("delta").mode("overwrite").saveAsTable("silver_matches_delta")
 
 ## ⚡ Delta Optimization
 
-- Delta format improves query performance
-- Supports scalable data pipelines in Databricks
+- Delta format improves query performance.
+- Supports scalable data pipelines in Databricks.
 
 ---
 
@@ -93,27 +109,27 @@ df.write.format("delta").mode("overwrite").saveAsTable("silver_matches_delta")
 - Problem Type: Classification
 - Model Used: Random Forest Classifier
 - Reason:
-  - Handles non-linear relationships
-  - Works well with structured data
-  - Robust against overfitting
+  - Handles non-linear relationships.
+  - Works well with structured data.
+  - Robust against overfitting.
 
 ---
 
 
 ## 📊 Model Evaluation
 
-- Train-Test Split: 80-20
-- Metric Used: Accuracy
+- Train Test Split: 80-20
+- Metric Used: Accuracy.
 - Model Accuracy: ~56%
-- Insight: Model performance can improve with better features and tuning
+- Insight: Model performance can improve with better features and tuning.
 
 ---
 
 ## 🔗 Pipeline Integration
 
 - Data processed through Bronze → Silver → Gold layers
-- Gold layer used for model training
-- Predictions generated and visualized in Power BI dashboard
+- Gold layer used for model training.
+- Predictions generated and visualized in Power BI dashboard.
 
 ---
 
@@ -121,10 +137,10 @@ df.write.format("delta").mode("overwrite").saveAsTable("silver_matches_delta")
 
 Dashboard provides:
 
-* Team performance analysis
-* Top teams & venues
-* Toss impact
-* Match outcome prediction
+* Team performance analysis.
+* Top teams & venues.
+* Toss impact.
+* Match outcome prediction.
 
 ---
 
