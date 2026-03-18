@@ -45,12 +45,13 @@ Predict which team will win a cricket match based on historical match data, team
 
 ---
 
-## 🤖 Machine Learning
+## 🤖 Model Performance
 
-* Model: Random Forest
-* Task: Binary Classification
-* Output: Win Probability (%)
-* Accuracy: ~56%
+- Model Used: Random Forest Classifier
+- Accuracy: ~56%
+- Evaluation Metric: Accuracy Score
+
+Note: Model can be further improved using advanced feature engineering and tuning.
 
 ---
 
@@ -82,11 +83,11 @@ IPL-Cricket-Analytics/
 
 ## 🚀 How to Run
 
-1. Upload dataset to Databricks
-2. Run notebook for data processing
-3. Train ML model
-4. Export results
-5. Open Power BI dashboard
+1. Upload dataset to Databricks (DBFS)
+2. Run notebook for Bronze → Silver → Gold transformation
+3. Train Machine Learning model
+4. Export processed data as CSV
+5. Open Power BI dashboard (.pbix file)
 
 ---
 
