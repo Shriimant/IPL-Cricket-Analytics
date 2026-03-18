@@ -146,9 +146,24 @@ Dashboard provides:
 
 ## 📊 Dashboard Preview
 
-![Page 1](images/page1.png)
-![Page 2](images/page2.png)
-![Page 3](images/page3.png)
+### 🔹 Overview Dashboard
+![Overview Dashboard](images/dashboard_overview.png)
+
+Provides key KPIs like total matches, runs, wickets and top-performing teams.
+
+---
+
+### 🔹 Team Performance Dashboard
+![Team Stats](images/team_stats.png)
+
+Shows batting strength, average runs, and top wicket takers.
+
+---
+
+### 🔹 Match Prediction Dashboard
+![Prediction](images/match_prediction.png)
+
+Displays AI-based win probability for upcoming matches.
 
 ---
 
