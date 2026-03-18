@@ -2,10 +2,10 @@
 
 ## 🔥 Key Highlights
 
-- End-to-End Data Pipeline using Databricks (Bronze → Silver → Gold)
-- Machine Learning Model for Match Prediction
-- Interactive Power BI Dashboard
-- MLflow Experiment Tracking
+- End to End Data Pipeline using Databricks (Bronze → Silver → Gold)
+- Machine Learning Model for Match Prediction.
+- Interactive Power BI Dashboard.
+- MLflow Experiment Tracking.
 
 ## 📌 Project Overview
 
@@ -21,9 +21,9 @@ Predict which team will win a cricket match based on historical match data, team
 
 ## 💼 Business Value
 
-* Helps analysts understand key winning factors
-* Useful for commentators and teams
-* Can be extended for betting analytics and fan engagement
+* Helps analysts understand key winning factors.
+* Useful for commentators and teams.
+* Can be extended for betting analytics and fan engagement.
 
 ---
 
@@ -54,9 +54,9 @@ Predict which team will win a cricket match based on historical match data, team
 
 ## 🤖 Model Performance
 
-- Model Used: Random Forest Classifier
+- Model Used: Random Forest Classifier.
 - Accuracy: ~56%
-- Evaluation Metric: Accuracy Score
+- Evaluation Metric: Accuracy Score.
 
 Note: Model can be further improved using advanced feature engineering and tuning.
 
@@ -92,8 +92,8 @@ IPL-Cricket-Analytics/
 
 1. Upload dataset to Databricks (DBFS)
 2. Run notebook for Bronze → Silver → Gold transformation
-3. Train Machine Learning model
-4. Export processed data as CSV
+3. Train Machine Learning model.
+4. Export processed data as CSV.
 5. Open Power BI dashboard (.pbix file)
 
 ---
