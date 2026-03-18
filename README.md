@@ -21,7 +21,8 @@ Predict which team will win a cricket match based on historical match data, team
 ---
 
 ## 🏗️ Architecture
-![Pipeline DAG](https://github.com/Shriimant/IPL-Cricket-Analytics/blob/main/images/IPL_Architecture_Diagram.png))
+
+![Pipeline DAG](https://github.com/Shriimant/IPL-Cricket-Analytics/blob/main/images/IPL_Architecture_Diagram.png)
 
 ---
 
